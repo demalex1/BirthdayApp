@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">BirthdayApp</string>
+    <string name="login">Авторизация</string>
+    <string name="login_hint">Логин</string>
+    <string name="password_hint">Пароль</string>
+    <string name="login_button">Войти</string>
+    <string name="student">Дементьев Алексей РИБО-01-21</string>
+    <string name="add_date">Добавить дату</string>
+    <string name="name_hint">Имя</string>
+    <string name="select_date">Введите дату рождения:</string>
+    <string name="button_add">Добавить</string>
+    <string name="year">Год:</string>
+    <string name="month">Месяц:</string>
+    <string name="day">День:</string>
+    <string name="name">Имя:</string>
+    <string name="year_hint">гггг</string>
+    <string name="month_hint">мм</string>
+    <string name="day_hint">дд</string>
+    <string name="age">Возраст:</string>
+    <string name="to_birthday_date">До дня Рождения:</string>
+    <string name="refresh">Обновить</string>
+    <string name="update">Редактировать</string>
+    <string name="button_update">Обновить</string>
+</resources>

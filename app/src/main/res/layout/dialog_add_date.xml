@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_dialog"
+    android:paddingVertical="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/textViewAddDateName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="@string/name" />
+
+    <EditText
+        android:id="@+id/editTextAddDate"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/shape_edit_text"
+        android:paddingHorizontal="5dp"
+        app:layout_constraintTop_toBottomOf="@id/textViewAddDateName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="@string/name_hint" />
+
+    <TextView
+        android:id="@+id/textViewAddDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/editTextAddDate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="@string/select_date" />
+
+    <TextView
+        android:id="@+id/textViewAddDateYear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/editTextAddDateYear"
+        app:layout_constraintBottom_toBottomOf="@id/editTextAddDateYear"
+        app:layout_constraintEnd_toStartOf="@id/editTextAddDateYear"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="17sp"
+        android:text="@string/year" />
+
+    <EditText
+        android:id="@+id/editTextAddDateYear"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:ems="5"
+        android:background="@drawable/shape_edit_text"
+        android:paddingHorizontal="5dp"
+        app:layout_constraintTop_toBottomOf="@id/textViewAddDate"
+        app:layout_constraintStart_toEndOf="@id/textViewAddDateYear"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="2dp"
+        android:inputType="number"
+        android:hint="@string/year_hint" />
+
+    <TextView
+        android:id="@+id/textViewAddDateMonth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/editTextAddDateMonth"
+        app:layout_constraintBottom_toBottomOf="@id/editTextAddDateMonth"
+        app:layout_constraintEnd_toStartOf="@id/editTextAddDateYear"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="17sp"
+        android:text="@string/month" />
+
+    <EditText
+        android:id="@+id/editTextAddDateMonth"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/shape_edit_text"
+        android:paddingHorizontal="5dp"
+        app:layout_constraintTop_toBottomOf="@id/editTextAddDateYear"
+        app:layout_constraintStart_toStartOf="@id/editTextAddDateYear"
+        app:layout_constraintEnd_toEndOf="@id/editTextAddDateYear"
+        android:ems="5"
+        android:layout_marginTop="2dp"
+        android:inputType="number"
+        android:hint="@string/month_hint"/>
+
+    <TextView
+        android:id="@+id/textViewAddDateDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="@id/editTextAddDateDay"
+        app:layout_constraintBottom_toBottomOf="@id/editTextAddDateDay"
+        app:layout_constraintEnd_toStartOf="@id/editTextAddDateYear"
+        app:layout_constraintStart_toStartOf="parent"
+        android:textSize="17sp"
+        android:text="@string/day" />
+
+    <EditText
+        android:id="@+id/editTextAddDateDay"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/shape_edit_text"
+        android:paddingHorizontal="5dp"
+        app:layout_constraintTop_toBottomOf="@id/editTextAddDateMonth"
+        app:layout_constraintStart_toStartOf="@id/editTextAddDateMonth"
+        app:layout_constraintEnd_toEndOf="@id/editTextAddDateMonth"
+        android:ems="5"
+        android:layout_marginTop="2dp"
+        android:inputType="number"
+        android:hint="@string/day_hint"/>
+
+    <Button
+        android:id="@+id/buttonAddDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/dark_turquoise"
+        app:layout_constraintTop_toBottomOf="@id/editTextAddDateDay"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:text="@string/button_add" />
+</androidx.constraintlayout.widget.ConstraintLayout>
