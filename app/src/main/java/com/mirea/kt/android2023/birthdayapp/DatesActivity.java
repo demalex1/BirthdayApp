@@ -159,63 +159,75 @@ public class DatesActivity extends AppCompatActivity implements PersonAdapter.On
                         Toast.makeText(this, "В январе 31 день!", Toast.LENGTH_LONG).show();
                         return;
                     }
+                    break;
                 case 2:
                     if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
                         if (day > 29) {
                             Toast.makeText(this, "В феврале 29 дней!", Toast.LENGTH_LONG).show();
                             return;
                         }
+                        break;
                     } else {
                         if (day > 28) {
                             Toast.makeText(this, "В феврале 28 дней!", Toast.LENGTH_LONG).show();
                             return;
                         }
+                        break;
                     }
                 case 3:
                     if (day > 31) {
                         Toast.makeText(this, "В марте 31 день!", Toast.LENGTH_LONG).show();
                         return;
                     }
+                    break;
                 case 4:
                     if (day > 30) {
                         Toast.makeText(this, "В апреле 30 дней!", Toast.LENGTH_LONG).show();
                         return;
                     }
+                    break;
                 case 5:
                     if (day > 31) {
                         Toast.makeText(this, "В мае 31 день!", Toast.LENGTH_LONG).show();
                         return;
                     }
+                    break;
                 case 6:
                     if (day > 30) {
                         Toast.makeText(this, "В июне 30 дней!", Toast.LENGTH_LONG).show();
                         return;
                     }
+                    break;
                 case 7:
                     if (day > 31) {
                         Toast.makeText(this, "В июле 31 день!", Toast.LENGTH_LONG).show();
                         return;
                     }
+                    break;
                 case 8:
                     if (day > 31) {
                         Toast.makeText(this, "В августе 31 день!", Toast.LENGTH_LONG).show();
                         return;
                     }
+                    break;
                 case 9:
                     if (day > 30) {
                         Toast.makeText(this, "В сентябре 30 дней!", Toast.LENGTH_LONG).show();
                         return;
                     }
+                    break;
                 case 10:
                     if (day > 31) {
                         Toast.makeText(this, "В октябре 31 день!", Toast.LENGTH_LONG).show();
                         return;
                     }
+                    break;
                 case 11:
                     if (day > 30) {
                         Toast.makeText(this, "В ноябре 30 дней!", Toast.LENGTH_LONG).show();
                         return;
                     }
+                    break;
                 case 12:
                     if (day > 31) {
                         Toast.makeText(this, "В декабре 31 день!", Toast.LENGTH_LONG).show();
